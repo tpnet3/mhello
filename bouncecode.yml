@@ -4,7 +4,8 @@ install:
     - curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
     - sudo apt-get install -y nodejs
     - curl https://install.meteor.com/ | sh
-    - meteor build --allow-superuser
+    - meteor npm install --save @babel/runtime
+    - meteor update --allow-superuser
     - sudo chown -Rh root .meteor/local
 
 information:

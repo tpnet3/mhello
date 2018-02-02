@@ -5,7 +5,7 @@ install:
     - sudo apt-get install -y nodejs
     - curl https://install.meteor.com/ | sh
     - meteor update --allow-superuser
-    - meteor npm install --save babel-runtime
+    - meteor npm install
     - sudo chown -Rh root .meteor/local
 
 information:

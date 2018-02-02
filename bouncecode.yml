@@ -1,0 +1,20 @@
+name: mhello
+
+install:
+    - curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+    - sudo apt-get install -y nodejs
+    - curl https://install.meteor.com/ | sh
+    - meteor build --allow-superuser
+    - sudo chown -Rh root .meteor/local
+
+information:
+    title: Create first meteor program based on meteor
+
+exercises:
+    -
+        section: 첫번째 섹션
+        lecture:
+            -
+                subject: 첫번째 목표
+                run:
+                    - ((bouncecode open -p 3000 http://localhost:3000/) &) && meteor --allow-superuser
